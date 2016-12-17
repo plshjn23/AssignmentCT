@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AssignmentCT</string>
+    <string name="fblogin_name">Login with Facebook</string>
+    <string name="facebook_app_id">1757131054509835</string>
+
+
+    <string name="permission_denied">Permission was denied. Please consider granting it in order to use all features.</string>
+    <string name="permission_denied_never_ask_again">Permission was denied with never ask again.</string>
+
+    <string name="dialogtext">Please crop/edit ALL images to make sure they are in a square format</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="gallery">Gallery</string>
+</resources>

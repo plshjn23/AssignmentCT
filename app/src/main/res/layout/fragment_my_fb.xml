@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainContentRL"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRL">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img"
+                android:id="@+id/imageviewtop"/>
+
+            <ImageView
+                android:id="@+id/imageviewBottom"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="1dp"
+                android:background="@drawable/background"
+                android:src="@mipmap/ic_launcher"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/imageviewtop"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/backBtn"
+            android:text="Back"
+            android:visibility="gone"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"/>
+
+
+        <Button
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/fblogoutBtn"
+            android:text="Log Out"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btnRL"
+            android:id="@+id/contentRL"
+            >
+
+            <RelativeLayout
+                android:id="@+id/loginRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp">
+
+
+                <ImageView
+                    android:id="@+id/FbFragmentLoginIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/fb_login_button" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragmentFbContentRL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/fbImageOrAlbumRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/facebookPhotosRV"
+                        android:layout_width="match_parent"
+                        android:clipToPadding="false"
+                        android:layout_height="match_parent"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fbAlbumsRV"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        >
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

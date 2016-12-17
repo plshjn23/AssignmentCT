@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/singleImageSocialParent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/singleSocialImageSocialLL"
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/socialSinglePicIV"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:minHeight="120dp"
+            android:minWidth="120dp"
+            android:padding="1dp"
+            android:scaleType="centerCrop" />
+
+        <CheckBox
+            android:id="@+id/socialSingleCheckCB"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/customize_check_box"
+            android:button="@null" />
+
+
+        <TextView
+            android:id="@+id/singleSocialImageCountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="1"
+
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

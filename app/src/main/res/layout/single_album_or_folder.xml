@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutParentSmallImages"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/grid_item_layout_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageIV"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="7dp"
+            android:layout_marginRight="-5dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerCrop"
+            android:src="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/folderOrAlbumName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/imageIV"
+            android:maxLines="2"
+            android:text="hello"
+            android:textColor="#040456"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/grid_item_layout_facebook"
+        android:src="#a6a8ab" />
+
+
+</RelativeLayout>

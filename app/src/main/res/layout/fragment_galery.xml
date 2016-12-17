@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainContentRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Back"
+            android:textColor="#fff" />
+
+        <ViewFlipper
+            android:id="@+id/fragment_create_gallery_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/backBtn">
+
+            <ListView
+                android:id="@+id/fragment_create_gallery_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:dividerHeight="0.5dp"
+                android:drawSelectorOnTop="false"
+                android:listSelector="@android:color/transparent"
+                android:longClickable="false"
+                android:overScrollFooter="@android:color/transparent"
+                android:smoothScrollbar="true" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/FragmentGaleryRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </ViewFlipper>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <!--         <Button
+                         android:id="@+id/proceedBTN"
+                         android:layout_width="match_parent"
+                         android:layout_height="50dp"
+                         android:textColor="@color/white"
+                         android:gravity="center"
+                         android:background="@color/orenge"
+                         android:text="Proceed"
+                         />-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

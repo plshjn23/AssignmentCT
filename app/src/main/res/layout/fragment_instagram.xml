@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/mainContentRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/btnRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageviewtop"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/instalatest" />
+
+            <ImageView
+                android:id="@+id/imageviewBottom"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="1dp"
+                android:background="@drawable/background"
+                android:layout_below="@+id/imageviewtop"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@mipmap/ic_launcher" />
+
+
+            <Button
+                android:id="@+id/instalogoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimary"
+                android:onClick="onClick"
+                android:text="Log out"
+                android:textColor="#fff"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/instagramPhotosRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/instalogoutBtn"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/instagramImagesRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnRL"
+            android:visibility="visible">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/InstaLoginRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRL"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp">
+
+
+            <ImageView
+                android:id="@+id/instagramLoginIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/insta_login" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
